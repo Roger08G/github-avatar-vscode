@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="8" r="3.5" fill="currentColor" />
+  <path
+    d="M4.5 19.5c0-3.59 3.36-6 7.5-6s7.5 2.41 7.5 6v.5h-15v-.5z"
+    fill="currentColor"
+  />
+</svg>

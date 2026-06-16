@@ -1,0 +1,50 @@
+name: Informe de error
+description: Informa de un problema reproducible en Avatar de GitHub
+title: '[Error]: '
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: No incluyas tokens de GitHub, cookies ni datos privados de la cuenta.
+  - type: input
+    id: vscode-version
+    attributes:
+      label: Versión de VS Code
+      placeholder: 1.96.0
+    validations:
+      required: true
+  - type: input
+    id: extension-version
+    attributes:
+      label: Versión de la extensión
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Sistema operativo
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamiento real
+    validations:
+      required: true
