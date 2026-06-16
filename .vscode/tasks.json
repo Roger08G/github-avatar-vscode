@@ -5,9 +5,7 @@
             "label": "build",
             "type": "shell",
             "command": "bun run build",
-            "problemMatcher": [
-                "$tsc"
-            ],
+            "problemMatcher": ["$tsc"],
             "group": {
                 "kind": "build",
                 "isDefault": true

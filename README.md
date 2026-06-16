@@ -71,11 +71,11 @@ test/                     Pruebas unitarias
 
 ## Configuración
 
-| Ajuste                      | Valor predeterminado | Descripción                                           |
-| --------------------------- | -------------------: | ----------------------------------------------------- |
-| `githubAvatar.showStatusBar` |                 `true` | Muestra la cuenta de GitHub en la barra de estado.    |
-| `githubAvatar.cacheMinutes`  |                   `30` | Periodo durante el que la caché del perfil se considera reciente. |
-| `githubAvatar.autoRefresh`   |                 `true` | Actualiza periódicamente el perfil mientras la extensión está activa. |
+| Ajuste                       | Valor predeterminado | Descripción                                                           |
+| ---------------------------- | -------------------: | --------------------------------------------------------------------- |
+| `githubAvatar.showStatusBar` |               `true` | Muestra la cuenta de GitHub en la barra de estado.                    |
+| `githubAvatar.cacheMinutes`  |                 `30` | Periodo durante el que la caché del perfil se considera reciente.     |
+| `githubAvatar.autoRefresh`   |               `true` | Actualiza periódicamente el perfil mientras la extensión está activa. |
 
 ## CI y releases
 

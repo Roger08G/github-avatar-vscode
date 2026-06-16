@@ -5,15 +5,9 @@ import potrace from "potrace";
 
 const DEFAUTL_IMAGE_NAME = "github-avatar-trace.png";
 
-const input = resolve(
-    process.cwd(),
-    process.argv[2] ?? `media/${DEFAUTL_IMAGE_NAME}`,
-);
+const input = resolve(process.cwd(), process.argv[2] ?? `media/${DEFAUTL_IMAGE_NAME}`);
 
-const output = resolve(
-    process.cwd(),
-    process.argv[3] ?? "media/github-avatar.svg",
-);
+const output = resolve(process.cwd(), process.argv[3] ?? "media/github-avatar.svg");
 
 const tempDir = resolve(process.cwd(), ".tmp");
 const tempFile = resolve(tempDir, DEFAUTL_IMAGE_NAME);
@@ -98,12 +92,10 @@ async function main() {
 }
 
 main().catch(async (error) => {
-    await rm(tempDir, { recursive: true, force: true }).catch(() => { });
+    await rm(tempDir, { recursive: true, force: true }).catch(() => {});
 
     console.error(
-        error instanceof Error
-            ? error.message
-            : "Error desconocido al generar el icono.",
+        error instanceof Error ? error.message : "Error desconocido al generar el icono.",
     );
 
     process.exit(1);

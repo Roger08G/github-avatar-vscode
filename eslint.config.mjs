@@ -1,12 +1,12 @@
-import eslint from '@eslint/js';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
+import eslint from "@eslint/js";
+import globals from "globals";
+import tseslint from "typescript-eslint";
 
-const typedFiles = ['src/**/*.ts', 'test/**/*.ts'];
+const typedFiles = ["src/**/*.ts", "test/**/*.ts"];
 
 export default tseslint.config(
     {
-        ignores: ['dist/**', 'coverage/**', '*.vsix', 'node_modules/**'],
+        ignores: ["dist/**", "coverage/**", "*.vsix", "node_modules/**"],
     },
     eslint.configs.recommended,
     ...tseslint.configs.recommendedTypeChecked.map((config) => ({
@@ -20,20 +20,20 @@ export default tseslint.config(
                 ...globals.node,
             },
             parserOptions: {
-                project: './tsconfig.json',
+                project: "./tsconfig.json",
                 tsconfigRootDir: import.meta.dirname,
             },
         },
         rules: {
-            '@typescript-eslint/consistent-type-imports': 'error',
-            '@typescript-eslint/no-floating-promises': 'error',
-            '@typescript-eslint/no-misused-promises': 'error',
-            '@typescript-eslint/only-throw-error': 'error',
-            '@typescript-eslint/require-await': 'error',
+            "@typescript-eslint/consistent-type-imports": "error",
+            "@typescript-eslint/no-floating-promises": "error",
+            "@typescript-eslint/no-misused-promises": "error",
+            "@typescript-eslint/only-throw-error": "error",
+            "@typescript-eslint/require-await": "error",
         },
     },
     {
-        files: ['*.mjs', 'scripts/**/*.mjs'],
+        files: ["*.mjs", "scripts/**/*.mjs"],
         languageOptions: {
             globals: {
                 ...globals.node,
