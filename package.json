@@ -121,9 +121,9 @@
         }
     },
     "scripts": {
-        "vscode:prepublish": "bun run build",
-        "build": "bun run esbuild.mjs --production",
-        "dev": "bun run esbuild.mjs --watch",
+        "vscode:prepublish": "npm run build",
+        "build": "node ./esbuild.mjs --production",
+        "dev": "node ./esbuild.mjs --watch",
         "typecheck": "tsc --noEmit",
         "lint": "eslint .",
         "format": "prettier --write .",
@@ -131,9 +131,9 @@
         "format:check": "prettier --check .",
         "test": "vitest run",
         "test:watch": "vitest",
-        "check": "bun run typecheck && bun run lint && bun run format:check && bun run test && bun run build",
+        "check": "npm run typecheck && npm run lint && npm run format:check && npm run test && npm run build",
         "clean": "node ./scripts/clean.mjs",
-        "package:vsix": "bun run build && bunx @vscode/vsce package --no-dependencies"
+        "package:vsix": "npm run build && npx @vscode/vsce package --no-dependencies"
     },
     "devDependencies": {
         "@eslint/js": "9.35.0",
