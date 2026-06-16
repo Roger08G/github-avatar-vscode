@@ -136,15 +136,15 @@
         "package:vsix": "npm run build && npx @vscode/vsce package --no-dependencies"
     },
     "devDependencies": {
-        "@eslint/js": "9.35.0",
-        "@types/node": "22.19.21",
-        "@types/vscode": "1.96.0",
+        "@eslint/js": "10.0.1",
+        "@types/node": "25.9.3",
+        "@types/vscode": "1.120.0",
         "@vscode/vsce": "3.9.2",
         "esbuild": "0.28.1",
-        "eslint": "9.35.0",
-        "globals": "16.3.0",
-        "prettier": "3.6.2",
-        "typescript": "5.8.3",
+        "eslint": "10.5.0",
+        "globals": "17.6.0",
+        "prettier": "3.8.4",
+        "typescript": "6.0.3",
         "typescript-eslint": "8.61.1",
         "vitest": "^4.1.9"
     }
